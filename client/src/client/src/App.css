@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #f4f5f7; margin: 0; }
+main { max-width: 720px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1 { font-size: 1.5rem; margin: 0; }
+h2 { font-size: 1.05rem; margin: 1.2rem 0 0.6rem; }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.switcher { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: #555; }
+.summary { display: flex; gap: 0.5rem; margin: 1rem 0 0.5rem; flex-wrap: wrap; }
+.chip { padding: 0.3rem 0.8rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; }
+.card, .expense { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 0.8rem; }
+.card h2 { margin-top: 0; }
+form { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+input, select { padding: 0.5rem; border: 1px solid #bbb; border-radius: 6px; font-size: 0.95rem; max-width: 100%; }
+.grow { flex: 1 1 180px; }
+.amount { width: 130px; }
+button { padding: 0.5rem 0.9rem; border: 1px solid #2563eb; background: #2563eb; color: #fff; border-radius: 6px; cursor: pointer; font-size: 0.9rem; }
+button:hover { background: #1d4ed8; }
+button.ghost { background: #fff; color: #2563eb; }
+button.ghost:hover { background: #eff6ff; }
+button.danger { background: #dc2626; border-color: #dc2626; }
+button.danger:hover { background: #b91c1c; }
+.row { display: flex; align-items: center; gap: 0.8rem; margin: 0.3rem 0; flex-wrap: wrap; }
+.main-row strong { margin-right: auto; }
+.badge { padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
+.s0 { background: #fef3c7; color: #92400e; }
+.s1 { background: #d1fae5; color: #065f46; }
+.s2 { background: #fee2e2; color: #991b1b; }
+.muted { color: #777; }
+.error { color: #b91c1c; background: #fee2e2; border-radius: 6px; padding: 0.6rem 0.8rem; }
+.hint { color: #666; font-size: 0.85rem; margin: 0.6rem 0 0; }
+.history { background: #f8fafc; border-radius: 6px; padding: 0.6rem 0.6rem 0.6rem 1.8rem; font-size: 0.9rem; margin: 0.5rem 0 0; }
+@media (max-width: 520px) {
+  .top { flex-direction: column; align-items: flex-start; }
+  form { flex-direction: column; }
+  form input, form select, form button, .amount { width: 100%; }
+  .grow { flex: 0 1 auto; }
+}
